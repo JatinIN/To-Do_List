@@ -52,7 +52,7 @@ function deleteCheck(e) {
         todo.classList.toggle("completed");
     }
 }
-
+// Selection of 'All','incomplete','compelete'  
 function filterTodo(e) {
     const todos = todoList.childNodes;
     todos.forEach(function(todo) {
