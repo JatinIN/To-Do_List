@@ -16,14 +16,17 @@ function addTodo(event) {
     newTodo.innerText = todoInput.value; 
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
+
     //ADDING TO LOCAL STORAGE 
     saveLocalTodos(todoInput.value);
     
+    // Complete button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = '<i class="fas fa-check-circle"></li>';
     completedButton.classList.add("complete-btn");
     todoDiv.appendChild(completedButton);
 
+    // Delete button
     const trashButton = document.createElement("button");
     trashButton.innerHTML = '<i class="fas fa-trash"></li>';
     trashButton.classList.add("trash-btn");
@@ -33,7 +36,7 @@ function addTodo(event) {
     todoInput.value = "";
 }
 
-// Delete Button
+// Delete Button function
 function deleteCheck(e) {
     const item = e.target;
 
