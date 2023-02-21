@@ -33,7 +33,7 @@ function addTodo(event) {
     todoInput.value = "";
 }
 
-//Adding Delete
+// Delete Button
 function deleteCheck(e) {
     const item = e.target;
 
